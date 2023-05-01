@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<style>
+/* Inline styles */
+body {
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #4CAF50;
+	color: white;
+}
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=submit], .button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover, .button:hover {
+	background-color: #45a049;
+}
+
+.button {
+	background-color: #008CBA;
+}
+
+.button.delete {
+	background-color: #f44336;
+}
+
+.form-popup {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 15px;
+	border: 1px solid #ccc;
+	z-index: 9;
+	background-color: #fff;
+	padding: 15px;
+	max-width: 300px;
+}
+
+.form-popup input[type=text] {
+	margin: 5px 0;
+}
+
+.form-popup .form-action {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#header {
+	background-color: #333;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+#footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+</style>
+</head>
+<body>
+	<div id="header">
+		<h1>Welcome to My Website</h1>
+	</div>
+	<h1>CRUD operations Using JPA</h1>
+	<table>
+		<tr>
+			<th>Number</th>
+			<th>Name</th>
+			<th>Describtion</th>
+			<th>Action</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Insert</td>
+			<td>Insert new Data</td>
+			<td><a href="insert2.html"><button class="button edit">Create</button></a>
+
+			</td>
+		</tr>
+
+		<tr>
+			<td>2</td>
+			<td>Update ALL</td>
+			<td>Update ALL For Data Entered</td>
+			<td><a href="update.html">
+					<button class="button edit">Update ALL</button>
+			</a></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Single Update</td>
+			<td>Single Update For Data Entered</td>
+			<td><a href="singleupdate.html"><button class="button edit">Single
+						Update</button></a></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Remove</td>
+			<td>Remove By Id</td>
+			<td><a href="remove.html"><button class="button edit">Remove</button></a>
+
+			</td>
+		<tr>
+			<td>5</td>
+			<td>Fetch</td>
+			<td>Fetch By id</td>
+			<td><a href="fetch12.html"><button class="button edit">Fetch</button></a>
+
+			</td>
+		</tr>
+
+	</table>
+	<a href="Home.html"><button
+			style="background-color: #4CAF50; /* Green */ border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 10px;">Website
+			Home</button></a>
+
+	<div id="footer">
+		<p>&copy;NEW 2023</p>
+	</div>
